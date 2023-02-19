@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functional Baper Bank Recap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-5">
+        <h1 class="text-5xl text-center">Functional <span class="text-red-500 font-semibold">Baper Bank!!</span></h1>
+    </header>
+    <main>
+        <!-- section-1 -->
+        <section class="mt-10">
+
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-orange-500 px-5 py-5 rounded-lg">
+                    <h2 class="text-4xl">Deposit</h2>
+                    <h1 class="text-6xl">$<span id="deposit-rate" class="text-white">00</span> </h1>
+                </div>
+                <div class="bg-lime-500 px-5 py-5 rounded-lg">
+                    <h2 class="text-4xl">Withdraw</h2>
+                    <h1 class="text-6xl">$<span id="withdraw-rate" class="text-white">00</span> </h1>
+                </div>
+                <div class="bg-red-500 px-5 py-5 rounded-lg">
+                    <h2 class="text-4xl">Total Balance</h2>
+                    <h1 class="text-6xl">$<span id="totalBalane-rate" class="text-white">1200</span> </h1>
+                </div>
+            </div>
+        </section>
+        <!-- section2 -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-gray-500	 px-8 py-6 rounded-xl">
+                    <h2 class="text-4xl mb-2 text-white">Please Deposit</h2>
+                    <input class="w-9/12 block mb-4 mt-2 px-2 py-2" type="text" name="" id="deposit-field"
+                        placeholder="$ amount you want to deposit">
+                    <button id="btn-deposit"
+                        class="bg-amber-500 px-3 py-2 font-semibold text-2xl rounded-lg w-9/ hover:bg-fuchsia-600 ">Deposit</button>
+                </div>
+
+                <div class="bg-violet-500 px-8 py-6 rounded-xl">
+                    <h2 class="text-4xl mb-2 text-white">Please Withdraw</h2>
+                    <input class="w-9/12 block mb-4 mt-2 px-2 py-2" type="text" name="" id="withdraw-field"
+                        placeholder="$ amount you want to withdraw">
+                    <button id="btn-withdraw"
+                        class="bg-lime-500 px-3 py-2 font-semibold text-2xl rounded-lg w-9/ hover:bg-fuchsia-600 ">Withdraw</button>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>

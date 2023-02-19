@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events Event </title>
+</head>
+
+<body>
+
+    <h1 id="changedName">Mostofa asik</h1>
+    <button onclick="handleClick()">Change The name</button>
+
+    <button id="addEvent">ager nam change korte hobe</button>
+    <br>
+    <br>
+    <br>
+    <h2 id="messege">Update change</h2>
+    <input id="input-field" type="text">
+    <button id="updator">Update Button</button>
+
+    <script>
+        function handleClick() {
+            const nameChange = document.getElementById('changedName')
+            nameChange.innerText = 'YAY! MAS'
+        }
+
+        document.getElementById('addEvent').addEventListener('click', function () {
+            const nameChange = document.getElementById('changedName')
+            nameChange.innerText = 'Mostofa Asik MAS'
+        })
+
+
+        // document.getElementById('Updator').addEventListener('click', function () {
+        //     const inputField = document.getElementById('input-field')
+        //     // console.log(inputField.value)
+        //     const inputText = inputField.value
+        //     // console.log(inputText)
+        //     const msg = document.getElementById('messege')
+        //     msg.innerText = inputText;
+        //     inputField.value = ''
+        // })
+
+
+        document.getElementById('updator').addEventListener('click',
+            function () {
+                const inputField = document.getElementById('input-field')
+                const inputText = inputField.value
+                const msg = document.getElementById('messege')
+                msg.innerText = inputText;
+                inputField.value = ''
+
+            })
+    </script>
+</body>
+
+</html>

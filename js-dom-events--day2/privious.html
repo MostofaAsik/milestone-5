@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag name</title>
+
+
+</head>
+
+<body>
+    <h1>My aplio </h1>
+    <ul>
+        <li>amar</li>
+        <li>sonar</li>
+        <li>bangla</li>
+        <li>amai</li>
+        <li>tomay</li>
+    </ul>
+    <h1>MAS</h1>
+    <script>
+        const liCollection = document.getElementsByTagName('li')
+        // console.log(liCollection)
+        for (const li of liCollection) {
+            li.style.color = 'tomato'
+
+            console.log(li.innerText)
+        }
+
+
+        const headingCollection = document.getElementsByTagName('h1')
+        for (const h1 of headingCollection) {
+            h1.style.color = 'red'
+
+            console.log(h1.innerText)
+        }
+    </script>
+</body>
+
+</html>

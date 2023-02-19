@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <header class="header bg-dance moral">
+        <h1 id="name" class="title bg-dance moral ">Mostofa Asik</h1>
+        <h2>MAS </h2>
+        <h3>ai Ajka</h3>
+        <h1>Antor Jala</h1>
+        <h1>Jalare Jala</h1>
+        <p id="khela"> its a js khela</p>
+
+    </header>
+    <main id="mainId">
+        <ul class="fruit" id="fruitName">
+            <li>aam</li>
+            <li>peyara</li>
+            <li>kola</li>
+            <li>apple</li>
+        </ul>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script>
+
+        //queryAll
+        const some = document.querySelectorAll('.header h1')
+        // console.log(some)
+        for (const head of some) {
+            // console.log(head.innerText)
+        }
+    </script>
+</body>
+
+</html>
